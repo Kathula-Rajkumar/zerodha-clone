@@ -240,6 +240,9 @@ app.post("/newOrder", async(req, res)=> {
       res.send("Order saved");
 });
 
+app.get("/", (req, res) => {
+     res.send("✅ Zerodha backend is live and working!");
+   });
 
 app.listen(3002, () => {
      console.log("App started");
